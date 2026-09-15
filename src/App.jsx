@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from './components/Navbar'
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/skills" element={<MySkills />} />
       </Routes>
       <Footer />
+      <Analytics />
     </>
   )
 }
